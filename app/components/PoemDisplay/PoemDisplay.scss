@@ -1,0 +1,93 @@
+.poem-item {
+  background: linear-gradient(135deg, #fff, #f9f9f9);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .poem-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #ff6f61;
+      margin: 0.5rem auto;
+      border-radius: 2px;
+    }
+  }
+
+  .poem-content {
+    font-family: "Lora", serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    margin: 1rem 0;
+
+    .poem-line {
+      margin: 0.2rem 0;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #ff6f61;
+      }
+    }
+    .show-more-btn {
+      border: none;
+      background: none;
+      color: #ff6f61;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      display: inline-block;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #d94b48;
+        text-decoration: underline;
+      }
+    }
+
+    
+  }
+
+  .poem-footer {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 0.95rem;
+    color: #666;
+
+    .poem-meta {
+      .author {
+        font-weight: 600;
+        color: #222;
+      }
+      .pen-name {
+        font-style: italic;
+        color: #888;
+      }
+    }
+
+    .poem-category {
+      margin-top: 0.3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  }
+}

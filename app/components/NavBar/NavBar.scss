@@ -1,0 +1,47 @@
+.slim-navbar {
+  background-color: var(--bs-body-bg) !important;
+  color: var(--bs-body-color) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  min-height: 50px;
+
+  // .navbar-brand {
+  //   font-weight: bold;
+  //   color: var(--bs-primary) !important;
+
+  //   img {
+  //     max-height: 40px;
+  //     width: auto;
+  //   }
+  // }
+  .nav-link {
+    color: var(--bs-body-color) !important; // default link color
+    // color: #333 !important; // default link color
+    transition: color 0.3s !important;
+
+    &.active {
+      color: #ff5733 !important; // active link color (change to any color you like)
+      font-weight: bold !important; // optional: make it bold
+      border-bottom: 2px solid #ff5733 !important; // optional: underline effect
+    }
+
+    &:hover {
+      color: #ff8c66 !important; // optional: hover effect
+    }
+  }
+
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* ✅ Navbar Toggler (Hamburger) */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(44,44,44,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(249,250,251,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
