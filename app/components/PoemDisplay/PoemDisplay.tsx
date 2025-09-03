@@ -25,18 +25,7 @@ const PoemDisplay: React.FC<PoemDisplayProps> = ({
   return (
     <div className="poem-item">
       <h2 className="poem-title">{title}</h2>
-
       <div className="poem-content">
-        {/* {previewLines.map((line, index) => (
-          <p key={index} className="poem-line">
-            {line}
-          </p>
-        ))}
-        {lines.length > 2 && (
-          <Link href={`/poem/${id}`} className="show-more-btn">
-            ...more
-          </Link>
-        )} */}
         {previewLines.map((line, index) => {
           // last preview line hai aur aur bhi lines hain -> "more" attach karna hai
           if (index === previewLines.length - 1 && lines.length > 2) {

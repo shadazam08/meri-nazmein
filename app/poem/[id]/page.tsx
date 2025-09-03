@@ -21,6 +21,7 @@ const PoemPage: React.FC = () => {
     const params = useParams();
     const id = params?.id as string;
 
+
     const [poem, setPoem] = useState<Poem | null>(null);
 
     useEffect(() => {
@@ -38,7 +39,7 @@ const PoemPage: React.FC = () => {
     if (!poem) {
         return (
             <div className="d-flex justify-content-center align-items-center vh-100">
-                <div className="spinner-border text-primary" role="status">
+                <div className="spinner-border text-danger" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>
             </div>
@@ -49,7 +50,7 @@ const PoemPage: React.FC = () => {
         <div className="container my-5">
             <div className="card shadow-lg p-4 mx-auto" style={{ maxWidth: "700px" }}>
                 {/* Title */}
-                <h1 className="text-center mb-4">{poem.poemTitle}</h1>
+                    <h1 className="text-center mb-4">{poem.poemTitle}</h1>
 
                 {/* Poem Content */}
                 <div className="mb-4">
