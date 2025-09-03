@@ -51,8 +51,8 @@ poemSchema.virtual("poem_id").get(function () {
   return this._id;
 });
 // 👇 Important: force refresh model if schema updated
-delete mongoose.models.Poem;
-const Poem = mongoose.model("Poem", poemSchema);
-// const Poem = mongoose.models.Poem || mongoose.model("Poem", poemSchema);
+// delete mongoose.models.Poem;
+// const Poem = mongoose.model("Poem", poemSchema);
+const Poem = mongoose.models.Poem || mongoose.model("Poem", poemSchema);
 
 export default Poem;

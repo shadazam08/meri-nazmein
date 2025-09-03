@@ -41,9 +41,9 @@ const Home: React.FC = () => {
   }, []);
   return (
     <div className="container mt-2">
-      <h1>Welcome to the Home Page</h1>
+      {/* <h1>Welcome to the Home Page</h1> */}
 
-      <div className="poem-list">
+      <div className="poem-lists">
         {poems.map((poem) => (
           <PoemDisplay
             id={poem._id}
