@@ -52,6 +52,9 @@ export const metadata: Metadata = {
   ],
 
   applicationName: siteName,
+  verification: {
+    google: "6qEuXzS1nh1uuhp9gvHr1ViBR0imVWAe2bpAOSVctls",
+  },
 
   authors: [
     {
