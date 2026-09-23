@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --mn-navy: #071a3d;
+  --mn-navy-deep: #041127;
+  --mn-blue: #0b4ea2;
+  --mn-blue-bright: #1267d6;
+
+  --mn-gold: #d4a62a;
+  --mn-gold-light: #f2cf69;
+  --mn-gold-dark: #a87912;
+
+  --mn-ivory: #fbf8f0;
+  --mn-cream: #f4efe3;
+  --mn-white: #ffffff;
+
+  --mn-text: #14213d;
+  --mn-text-muted: #64748b;
+  --mn-border: #e6dfcf;
+}
+
+@theme inline {
+  --color-background: var(--mn-ivory);
+  --color-foreground: var(--mn-text);
+
+  --color-mn-navy: var(--mn-navy);
+  --color-mn-navy-deep: var(--mn-navy-deep);
+  --color-mn-blue: var(--mn-blue);
+  --color-mn-blue-bright: var(--mn-blue-bright);
+
+  --color-mn-gold: var(--mn-gold);
+  --color-mn-gold-light: var(--mn-gold-light);
+  --color-mn-gold-dark: var(--mn-gold-dark);
+
+  --color-mn-ivory: var(--mn-ivory);
+  --color-mn-cream: var(--mn-cream);
+  --color-mn-white: var(--mn-white);
+
+  --color-mn-text: var(--mn-text);
+  --color-mn-text-muted: var(--mn-text-muted);
+  --color-mn-border: var(--mn-border);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--mn-ivory);
+  color: var(--mn-text);
+}
+
+::selection {
+  background: var(--mn-gold);
+  color: var(--mn-navy-deep);
+}
+
+.font-poetry {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.font-sans {
+  font-family: var(--font-inter), Arial, sans-serif;
+}
